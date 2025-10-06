@@ -29,6 +29,7 @@ a{
 .flex{
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     }
 
     li{
@@ -49,6 +50,27 @@ a{
         margin: auto;
         padding-inline: 1.5rem;
     }   
+
+    img{
+        max-width: 76%;
+        height: auto;
+        margin: auto;
+        display: block; 
+    }
+
+    .p-top{
+        padding-top: 10rem;
+    }
+
+    .text-center{
+        text-align: center;
+    }
+
+    .mt-4{
+        margin-top: 4rem;
+    }
+
+ 
         
 
 
@@ -109,13 +131,115 @@ a{
     
 
 /* SECTION STYLINGS */
+.hero-section{
+    min-height: calc(100vh - 14vh);
+}
+.content,
+.image-container,
+.services-card{
+    flex: 1;
+    flex-basis: 300px;
+}
+
+h1{
+    font-size: 5.6vw;
+    color: var(--lead);
+}
+
+h1 span{
+    color: var(--gold-finger);
+}
+p{
+    font-size: 1.25rem;
+    color: gray;
+    line-height: 1.8rem;
+    font-weight: 400;
+}
+
+.para{
+    margin-block: 2rem;
+    max-width: 550px;
+}
+
+.social-icon{
+    background: var(--hint-yellow);
+    width: 3rem;
+    aspect-ratio: 1;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 3rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 2px 1px;
+    transition: .3s ease-in-out;
+}
+.social-icon:hover{
+    background: var(--lead);
+    color: var(--pure-white);
+}
+
+ /*  SECTION 01  */
+  h5{
+    font-size: 1.2rem;
+    letter-spacing: .2rem;
+    color : var(--gold-finger);
+    text-transform: uppercase;
+  }
+  h2{
+    font-size: 3.7rem;
+    text-transform: capitalize;
+    color: var(--lead);
+ }
+
+  h3{
+    font-size: 2rem;
+    text-transform: capitalize;
+    color: var(--lead); 
+
+ }
+
+ .service-card h3{
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+
+ }
+
+/* SECTION 02 */
+
+.order-card{
+    flex: 1;
+    flex-basis: 300px;
+    background-color: var(--pure-white);
+    padding: 0 1rem 2rem 1rem;
+     border: .1rem solid var(--gold-finger);
+        border-radius: 2rem;
+        box-shadow:
+        rgba(0, 0, 0, 0.05) 8px 8px 8px,
+        rgba(0, 0, 0, 0.05) 8px 8px 8px inset;
+}
+
+.order-card img{
+    width: 15rem;
+    filter: drop-shadow(
+        rgb(0, 0, 0.2) 0 10px 10px
+    );
+}
+
+h4{
+    font-size: 1.8rem;
+    color: var(--lead);
+}
+
+.order-card price{
+    font-size: 1.7rem;
+    color: var(--gold-finger);
+    padding: 1.3rem 0 2rem 0;
+}
+
+/* section 03 */
 
 
-
-
-
-
-
+    
+    
 
 
 
@@ -193,4 +317,27 @@ a{
         transform-translateX(-50%);
 
 }
+/* section stylings */
+
+/* HERO STYLINGS */
+    h1{
+        font-size: 3.6rem;
+    }
+
+    .content{
+        padding-top: 3rem;
+    }
+
+    .gap-2{
+        gap: 1.4rem;
+    }
+
+    .gap-4{
+        gap: 4rem;
+    }
+
+    /* SECTION 01 */
+    h2{
+        font-size: 3rem;
+    }
 }
