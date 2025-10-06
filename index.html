@@ -2,83 +2,190 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Food Order website </title>
-  <link rel="stylesheet"
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-      crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Order website </title>
+  <link rel="stylesheet" <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
-    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!-- HEADER PART -->
-    <header>
-        <nav class="navbar flex between wrapper">
-            <a href="#" class="logo">QuickBite.</a>
+  <!-- HEADER PART -->
+  <header>
+    <nav class="navbar flex between wrapper">
+      <a href="#" class="logo">QuickBite.</a>
 
-            <!-- desktop menu -->
-            <ul class="navlist flex gap-3">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Menu</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">About us</a></li>
-                <li><a href="#">contacts</a></li>
-            </ul>
-            <div class="desktop-action flex gap-2">
-                <a herf="#" class="cart-icon">
-                    <i class="fa-solid fa-bag-shopping"></i>
-                    <span class="cart-value">0</span>
-                </a>
+      <!-- desktop menu -->
+      <ul class="navlist flex gap-3">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">contacts</a></li>
+      </ul>
+      <div class="desktop-action flex gap-2">
+        <a herf="#" class="cart-icon">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="cart-value">0</span>
+        </a>
 
-                <a href="#" class="btn">
-                    Sign in
-                    &nbsp;
-                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+        <a href="#" class="btn">
+          Sign in
+          &nbsp;
+          <i class="fa-solid fa-arrow-right-from-bracket"></i>
 
-                </a>
+        </a>
 
-                <a href="#" class="hamburger">
-                    <i class="fa-solid fa-bars"></i>
-                </a>
+        <a href="#" class="hamburger">
+          <i class="fa-solid fa-bars"></i>
+        </a>
 
+      </div>
+      <!-- mobile menu -->
+      <ul class="mobile-menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">contacts</a></li>
+        <li>
+          <a href="#" class="btn">
+            Sign in
+            &nbsp;
+            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+
+          </a>
+        </li>
+      </ul>
+
+
+
+    </nav>
+
+
+  </header>
+
+  <!--SECTION PART-->
+  <main>
+
+    <section>
+      <div class="hero-section flex wrapper gap-4">
+        <div class="content">
+          <h1>Enjoy Your Delicious<br><span>Food</span></h1>
+          <p class="para">
+            we will fill your tummy with delicious<br>
+            food with fast pickup
+          </p>
+          <div class="flex gap-2">
+            <a href="#" class="btn">order now</a>
+
+            <a href="#" class="social-icon">
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+            <a href="#" class="social-icon">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#" class="social-icon">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="#" class="social-icon">
+              <i class="fa-brands fa-google-plus-g"></i>
+            </a>
+          </div>
+        </div>
+        <div class="image-contener">
+          <img src="images copy/kashvi.jpg">
+        </div>
+    </section>
+
+    <section>
+      <div class="wrapper p-top">
+        <div class="text-center">
+          <h5>Our Services</h5>
+          <h2>How does it work?</h2>
+        </div>
+        <div class="flex text-center mt-4 gap-4">
+          <div class="services-card">
+            <div class="images-container">
+              <img src="images copy/easy-to-order.png">
             </div>
-            <!-- mobile menu -->
-            <ul class="mobile-menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Menu</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">About us</a></li>
-                <li><a href="#">contacts</a></li>
-                <li>
-                    <a href="#" class="btn">
-                        Sign in
-                        &nbsp;
-                      <i class="fa-solid fa-arrow-right-from-bracket"></i>
+            <h3>Easy to Order</h3>
+            <p>You Only need few steps in ordering food.</p>
 
-                    </a>
-                </li>
-            </ul>
+          </div>
+          <div class="services-card">
+            <div class="images-container">
+              <img src="images copy/best-quality.png">
+            </div>
+            <h3>Best Quality</h3>
+            <p>Not only fast for us in quality is also number one.</p>
+
+          </div>
+          <div class="services-card">
+            <div class="images-container">
+              <img src="images copy/fast-delivery.png">
+            </div>
+            <h3>ontime Pick-up </h3>
+            <p>order is always ready ontime even faster.</p>
+
+          </div>
+        </div>
+
+
+      </div>
+      </div>
+
+    </section>
+
+    <section>
+      <div class="wrapper p-top">
+        <div class="text-center">
+          <h5>Our Menu</h5>
+          <h2>The Most Populer</h2>
+        </div>
+
+        <div class="card-list text-center flex mt-4 gap-2">
+         <!--- <div class="order-card">
+            <div class="card-image">
+              <img src="images copy/burger.png">
+              </div>
+              <h4>Double looded burger</h4>
+              <h4 class="price">Rs.200</h4>
+              <a href="#" class="btn">Add to cart</a>
+            </div> --->
+            
+          </div> 
+        </div>
+    </section>
+
+    <section>
+      <div class="wrapper p-top flex gap-3">
+       <div class="image-contener">
+          <img src="images copy/kashvi.jpg">
+       </div>
+
+       <div class="content">
+        <h5>Our reviews</h5>
+        <h2>what they say?</h2>
+       </div>
+        
+      </div>
+        
+    </section>
 
 
 
-        </nav>
+  </main>
 
+  <!--FOOTER PART-->
+  <footer>
 
-    </header>
-
-    <!--SECTION PART-->
-    <main>
-
-    </main>
-
-    <!--FOOTER PART-->
-    <footer>
-
-    </footer>
+  </footer>
 
 </body>
 
