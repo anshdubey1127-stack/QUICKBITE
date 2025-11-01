@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quick Bites</title>
+    <title>QuickBite</title>
     <!-- Link to external CSS file -->
     <link rel="stylesheet" href="style.css">
     </head>
@@ -73,7 +73,7 @@
         <div class="container header-container">
             <a href="#" class="logo">
                 <i class="fas fa-utensils"></i>
-                <h1>Quick <span>Bites</span></h1>
+                <h1>Quick<span>Bite</span></h1>
             </a>
             <nav>
                 <ul>
@@ -129,7 +129,7 @@
 
                 <button class="btn btn-primary" id="startOrderBtn">
                     <i class="fas fa-rocket"></i>
-                    Start Ordering Now
+                    ORDER NOW
                 </button>
             </div>
         </div>
@@ -139,8 +139,8 @@
     <section class="features" id="how-it-works">
         <div class="container">
             <div class="section-title">
-                <h2>How Quick Bites Works</h2>
-                <p>Simple steps to save your precious college time</p>
+                <h2>How QuickBite Works</h2>
+                <p>Simple steps to save your precious time</p>
             </div>
             <div class="features-grid">
                 <div class="feature-card">
@@ -213,7 +213,7 @@
                 <button class="filter-btn active">All</button>
                 <button class="filter-btn">Main Cafeteria</button>
                 <button class="filter-btn">Food Court</button>
-                <button class="filter-btn">Quick Bites</button>
+                <button class="filter-btn">QuickBite</button>
             </div>
             <div class="cafeterias-grid" id="cafeteriasGrid">
                 <!-- Cafeterias will be loaded dynamically -->
@@ -346,24 +346,27 @@
                     <h3>Ghaziabad Colleges</h3>
                     <ul>
                         <li><a href="#" data-college="abes">ABES Engineering College</a></li>
-                        <li><a href="#" data-college="abesit">ABES IT College</a></li>
-                        <li><a href="#" data-college="iitm">IITM College</a></li>
-                        <li><a href="#" data-college="kiet">KIET Group</a></li>
-                        <li><a href="#" data-college="ims">IMS College</a></li>
+                        <li><a href="#" data-college="abesit">ABES Institute of Technology</a></li>
+                        <li><a href="#" data-college="iitm">IMS GHAZIABAD</a></li>
+                        <li><a href="#" data-college="kiet">KIET Group of Institutions</a></li>
+                        <li><a href="#" data-college="ims">IMS Engineeting College</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
                     <h3>Contact Info</h3>
                     <ul>
                         <li><i class="fas fa-map-marker-alt"></i> Ghaziabad, Uttar Pradesh</li>
-                        <li><i class="fas fa-phone"></i> +91 98765 43210</li>
+                        <li><i class="fas fa-phone"></i> +91 9616958410</li>
+                        <li><i class="fas fa-phone"></i> +91 7982434674</li>
+                        <li><i class="fas fa-phone"></i> +91 9580093772</li>
+                        <li><i class="fas fa-phone"></i> +91 9389238639</li>
                         <li><i class="fas fa-envelope"></i> support@quickbites.com</li>
-                        <li><i class="fas fa-clock"></i> Mon-Sun: 8:00 AM - 10:00 PM</li>
+                        <li><i class="fas fa-clock"></i> Mon-Sun: 8:00 AM - 5:00 PM</li>
                     </ul>
                 </div>
             </div>
             <div class="copyright">
-                <p>&copy; 2024 Quick Bites. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+                <p>&copy; 2024 QuickBite. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
             </div>
         </div>
     </footer>
@@ -387,7 +390,7 @@
                     await this.loadInitialData();
                     this.setupEventListeners();
                     this.checkAuthStatus();
-                    this.showToast('Welcome to Quick Bites!', 'success');
+                    this.showToast('Welcome to QuickBite!', 'success');
                 } catch (error) {
                     console.error('Failed to initialize app:', error);
                     this.showToast('Failed to load application', 'error');
@@ -404,13 +407,13 @@
                         name: "ABES Engineering College",
                         location: "Ghaziabad",
                         icon: "fas fa-graduation-cap",
-                        cafeterias: ["Main Cafeteria", "Food Court", "Quick Bites Corner"],
+                        cafeterias: ["Main Cafeteria", "Food Court", "QuickBite Corner"],
                         image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
                         description: "Premier engineering college with multiple dining options"
                     },
                     {
                         id: "abesit",
-                        name: "ABES IT College",
+                        name: "ABES Institute Of Technology",
                         location: "Ghaziabad",
                         icon: "fas fa-laptop-code",
                         cafeterias: ["Tech Cafe", "Main Cafeteria", "Snack Bar"],
@@ -418,8 +421,8 @@
                         description: "Information technology focused campus with modern facilities"
                     },
                     {
-                        id: "iitm",
-                        name: "IITM College",
+                        id: "ims ghaziabad",
+                        name: "IMS GHAZIABAD",
                         location: "Ghaziabad",
                         icon: "fas fa-university",
                         cafeterias: ["Central Cafeteria", "North Block Cafe"],
@@ -657,7 +660,7 @@
                 }
 
                 this.updateCart();
-                this.showToast(`${item.name} added to cart!`, 'success');
+                this.showToast(`${item.name} Added to cart!`, 'success');
             }
 
             updateCart() {
@@ -738,7 +741,7 @@
                     };
 
                     // Save to localStorage
-                    localStorage.setItem('quickBitesUser', JSON.stringify(this.currentUser));
+                    localStorage.setItem('quickBiteUser', JSON.stringify(this.currentUser));
 
                     this.updateUI();
                     this.hideAuthModal();
@@ -792,7 +795,7 @@
                     };
 
                     // Save to localStorage
-                    localStorage.setItem('quickBitesUser', JSON.stringify(this.currentUser));
+                    localStorage.setItem('quickBiteUser', JSON.stringify(this.currentUser));
 
                     this.updateUI();
                     this.hideAuthModal();
@@ -807,7 +810,7 @@
             handleLogout() {
                 this.currentUser = null;
                 this.cart = [];
-                localStorage.removeItem('quickBitesUser');
+                localStorage.removeItem('quickBiteUser');
                 this.updateUI();
                 this.showToast('Logged out successfully', 'success');
             }
